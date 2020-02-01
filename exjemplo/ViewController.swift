@@ -13,17 +13,11 @@ class ViewController: UIViewController {
     //Outlets
     @IBOutlet weak var reverseLabel: UILabel!
     
-    //Properties
-    //let mensaje = "Brrr!"
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        
-        //print(mensaje)
         
         let reversed = reverse(text: "Stressed")
-        //print(reversed)
         
         reverseLabel.text = reversed
     }
