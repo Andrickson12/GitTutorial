@@ -26,6 +26,7 @@ class ViewController: UIViewController {
         return String(text.reversed())
     }
     
+   // https://www.appcoda.com/git-xcode/
     
 }
 
