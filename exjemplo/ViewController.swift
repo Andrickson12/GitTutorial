@@ -9,21 +9,29 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    let mensaje = "Brrr!"
+    
+    //Outlets
+    @IBOutlet weak var reverseLabel: UILabel!
+    
+    //Properties
+    //let mensaje = "Brrr!"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        print(mensaje)
+        //print(mensaje)
         
-        print(reverse(text: "Stressed"))
+        let reversed = reverse(text: "Stressed")
+        //print(reversed)
+        
+        reverseLabel.text = reversed
     }
-
+    
     func reverse(text: String) -> String {
         return String(text.reversed())
     }
-
+    
+    
 }
 
